@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+
+import Hero from './components/Hero'
+import Feature from './components/Features'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div>
+        <Hero />
+        <div className='wrapper'>
+          <Feature image='https://source.unsplash.com/random/1024x768' />
+          <h1>Hello world!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quas quae dolores iure incidunt, repudiandae dolorum quasi neque, quod nobis voluptas, labore possimus, vel libero assumenda atque eveniet. Eum, omnis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quas quae dolores iure incidunt, repudiandae dolorum quasi neque, quod nobis voluptas, labore possimus, vel libero assumenda atque eveniet. Eum, omnis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quas quae dolores iure incidunt, repudiandae dolorum quasi neque, quod nobis voluptas, labore possimus, vel libero assumenda atque eveniet. Eum, omnis!</p>
+          <sub>rere</sub>
+          <sup>grgrgr</sup>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }

@@ -1,5 +1,123 @@
-body {
+/*Minimal Reset*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
   margin: 0;
+}
+
+
+html {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680 ));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
   padding: 0;
-  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.4375em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.wrapper {
+  max-width: 35em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+h1, .h1 {
+  font-size: 4.25em;
+  line-height: 1.01470588em;
+  margin-top: 0.33823529em;
+  margin-bottom: 0.67647058em;
+}
+h2, .h2 {
+  font-size: 2.625em;
+  line-height: 1.0952381em;
+  margin-top: 0.54761905em;
+  margin-bottom: 0.54761905em;
+}
+h3, .h3 {
+  font-size: 1.625em;
+  line-height: 1.76923077em;
+  margin-top: 0.88461538em;
+  margin-bottom: 0em;
+}
+h4, .h4 {
+  font-size: 1em;
+  line-height: 1.4375em;
+  margin-top: 1.4375em;
+  margin-bottom: 0em;
+}
+h5, .h5 {
+  font-size: 1em;
+  line-height: 1.4375em;
+  margin-top: 1.4375em;
+  margin-bottom: 0em;
+}
+p, ul, ol, pre, table, blockquote {
+  color: #606788;
+  margin-top: 0em;
+  margin-bottom: 1.4375em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: url('/img/hero_03.jpg') bottom center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/img/pattern.png'), linear-gradient(20deg, rgba(252, 96, 118, 0.7) 0%, rgba(255, 154, 68, 0.3) 100%);
+  /*background-image: url('/img/pattern.png'), linear-gradient(to top, rgba(48, 207, 208, 0.5) 0%, rgba(51, 8, 103, 0.75) 100%);*/
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
 }
