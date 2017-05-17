@@ -11,7 +11,6 @@ class App extends Component {
       <div>
         <Hero />
         <div className='wrapper'>
-          <Feature image='https://source.unsplash.com/random/1024x768' />
           <h1>Hello world!</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quas quae dolores iure incidunt, repudiandae dolorum quasi neque, quod nobis voluptas, labore possimus, vel libero assumenda atque eveniet. Eum, omnis!</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quas quae dolores iure incidunt, repudiandae dolorum quasi neque, quod nobis voluptas, labore possimus, vel libero assumenda atque eveniet. Eum, omnis!</p>
