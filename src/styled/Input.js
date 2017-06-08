@@ -1,14 +1,23 @@
+import React from 'react'
 import styled from 'styled-components'
 
+import { media } from './style-utils'
+
 const Input = styled.input`
-  display: block;
   border-radius: 0.25em;
-  font-size: 1.25em;
+  font-size: 1em;
   width: 100%;
   border: none;
   padding: 0.5em;
-  margin-bottom: 0.5em;
-  /*display: inline-block;
+  &:not(:last-child) {
+    margin-bottom: 0.5em;
+    ${media.tablet`margin-bottom: 0;`}
+    ${media.tablet`margin-right: 0.5em;`}
+  }
+  &::-webkit-input-placeholder {
+    color: #8a90ac;
+  }
+    /*display: inline-block;
   color: white;
   cursor: pointer;
   font-size: 1.35em;
@@ -25,5 +34,16 @@ const Input = styled.input`
     background: rgba(255, 255, 255, 0.5);
     color: #09203f;
   }*/
+
 `
-export default Input
+
+const InputField = (props) => {
+  return (
+    <div>
+      <label htmlFor=""></label>
+      <Input></Input>
+    </div>
+  )
+}
+
+export default InputField
