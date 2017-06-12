@@ -15,20 +15,21 @@ const BeerHero = styled.section`
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  height: 85vh;
+  height: 100%;
+  padding-bottom: 2em;
   background-image: linear-gradient(to top, rgba(9, 32, 63, 0.75) 0%, rgba(83, 120, 149, 0.75) 100%), url('img/hero_03.jpg');
   background-position: bottom;
   background-size: cover;
   /*background-image: linear-gradient(120deg, rgba(246, 211, 101, 0.75) 0%, rgba(253, 160, 133, 0.75) 100%);*/
   /*background-image: linear-gradient(to top, #09203f 0%, #537895 100%);*/
   /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
-  ${media.tablet`height: 75vw;`}
+  ${media.tablet`height: 56vw;`}
 `
 
 const BeerHeader = styled.div`
   position: relative;
-  margin: 0.75em auto;
-  ${media.tablet`margin: 2em auto;`}
+  margin: 0.5em auto;
+  ${media.tablet`margin: 1em auto;`}
 `
 
 const BeerHeadeline = styled.h2`
@@ -47,9 +48,7 @@ const Hero = (props) => {
         <BeerHeadeline>Home Made Beer</BeerHeadeline>
       </BeerHeader>
       <Filter></Filter>
-      {/* <div>
-        <Button>Beer Me</Button>
-      </div> */}
+      <Button>Beer Me</Button>
     </BeerHero>
   );
 }

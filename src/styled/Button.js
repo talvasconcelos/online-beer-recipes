@@ -13,7 +13,7 @@ const Button = styled.a`
   vertical-align: middle;
   white-space: nowrap;
   transition: all 0.25s ease;
-
+  margin: 1em;
   &:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #09203f;
